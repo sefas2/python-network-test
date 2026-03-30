@@ -1,0 +1,33 @@
+---
+- name: switch-01
+  loopback_ip: 100.100.100.100
+  device_type: linux
+  host: 127.0.0.1
+  port: 2211
+  username: root
+  password: cisco
+
+- name: switch-02
+  loopback_ip: 101.101.101.101
+  device_type: linux
+  host: 127.0.0.1
+  port: 2212
+  username: root
+  password: cisco
+
+- name: router-east
+  loopback_ip: 102.102.102.102
+  device_type: linux
+  host: 127.0.0.1
+  port: 2221
+  username: root
+  password: cisco
+
+- name: router-west
+  loopback_ip: 103.103.103.103
+  device_type: linux
+  host: 127.0.0.1
+  port: 2222
+  username: root
+  password: cisco
+
