@@ -35,13 +35,24 @@ services:
       mgmt_net:
         ipv4_address: 172.100.0.22
 
+  api-server:
+    image: mccutchen/go-httpbin
+    container_name: local-api-server
+    ports:
+      - "8080:8080"
+    networks:
+      mgmt_net:
+        ipv4_address: 172.100.0.50
+
 networks:
   mgmt_net:
     driver: bridge
     ipam:
       config:
         - subnet: 172.100.0.0/24
-            
+
+
+      
           
 
 
