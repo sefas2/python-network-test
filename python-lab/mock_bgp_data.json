@@ -1,0 +1,16 @@
+{
+    "ipv4Unicast": {
+        "peers": {
+            "10.0.0.2": {
+                "state": "Established",
+                "pfxRcd": 5,
+                "peerUptimeMsec": 120000
+            },
+            "10.0.0.3": {
+                "state": "Established",
+                "pfxRcd": 2,
+                "peerUptimeMsec": 85000
+            }
+        }
+    }
+}
