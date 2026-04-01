@@ -23,4 +23,6 @@ jobs:
           pip install pytest
 
       - name: Run BGP State Validation
-        run: pytest test_offline_bgp.py -v
+        run: |
+          cd python-lab
+          pytest test_offline_bgp.py -v
